@@ -1,0 +1,464 @@
+/* ------------------Header Section---------------------------- */
+.dashboard-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    gap: 20px;
+    background: white;
+}
+.header-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 45);
+    color: white;
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+.title-area{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.clipboard-icon{
+    font-size: 30px;
+}
+.title-area h1{
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+}
+.header-div button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: rgb(255, 65, 65);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.header-div button:hover{
+    background-color: rgb(253, 93, 93);
+}
+
+/* ----------------- Welcome Section--------------------------- */
+
+.welcome-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+}
+.left-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+.left-content h2{
+    font-size: 24px;
+    margin-top: 15px;
+}
+.left-content p{
+    color: rgb(79, 79, 79);
+    margin-bottom: 12px;
+}
+.wave-icon{
+    color: rgb(255, 176, 30);
+    transform: scaleX(-1);
+}
+.welcome-image{
+    max-width: 200px;
+    height: auto;
+}
+
+
+/* -------------------Statisics Section-------------------- */
+
+.stats-div{
+    display: flex;
+    gap: 20px;
+}
+.stats-card{
+    flex: 1;
+    border: 2px;
+    padding: 20px;
+    border-radius: 15px;
+    border-style:dashed;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.icons img{
+    width: 70px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.card-content{
+    display: flex;
+    align-items: center;
+}
+
+
+.total-card{
+    background-color: #ebf3fa;   /*dcebfb*/
+    border-color: #cee7ff;
+}
+.total-card p{
+    color: #188bff;
+}
+
+
+.pending-card{
+    background-color: rgb(250, 249, 247);
+    border-color: rgb(255, 239, 211);
+}
+.pending-card p{
+    color: orange;
+}
+
+
+.completed-card{
+    background-color: rgb(244, 254, 244);
+    border-color: rgb(207, 255, 207);
+}
+.completed-card p{
+    color: green;
+}
+.card-content h3{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.card-content p{
+    margin-top: 2px;
+    margin-bottom: 0;
+
+    font-size: 40px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+
+/* -----------------------Add Tasks Section-------------------------------- */
+
+.addtask-div{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f3f8fc;
+    border: 1px;
+    border-style: dotted;
+    border-color: #7ba4c5;
+}
+.addtask-div button{
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-right: 25px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+.addtask-div button:hover{
+    background-color: #1d51c0;
+}
+
+
+/* -------------------Pending Task Section------------------------------------------ */
+
+.pendingtask-div{
+    padding: 10px;
+    background-color: rgb(255, 253, 249);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.pendingtask-icon{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 10px;
+}
+.pendingtask-icon img{
+    width: 40px;
+}
+.pendingtask-div hr{
+    border: none;
+    height: 1px;
+    background-color: rgb(238, 238, 238);
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.shadow{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding: 12px;
+    color: rgb(162, 162, 162);
+}
+.pending-details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.task-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.information h4{
+    margin: 0;
+    font-size: 22px;
+}
+.information p{
+    margin: 0;
+    color: #555;
+}
+.information span{
+    color: gray;
+    font-size: 14px;
+}
+.information-buttons{
+    display: flex;
+    gap: 10px;
+}
+.information-buttons button{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.information-buttons button:hover{
+    background-color: rgb(216, 216, 216);
+}
+
+/* ----------------------------------------Completed Task Section----------------------------- */
+
+.completedtask-div{
+    padding: 10px;
+    background-color: rgb(247, 255, 247);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.completedtask-icon{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 10px;
+}
+.completedtask-icon img{
+    width: 40px;
+}
+.completedtask-div hr{
+    border: none;
+    height: 1px;
+    background-color: rgb(238, 238, 238);
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+.shadow{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding: 12px;
+    color: rgb(162, 162, 162);
+}
+
+
+/* ---------------------Modal Overlay---------------------- */
+
+.model-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.model-box{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form-group input, .form-group textarea, .form-group select{
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.form-group textarea{
+    resize: none;
+    height: 100px;
+    font-family: inherit;
+}
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 28px;
+}
+.modal-buttons button{
+    background-color: rgb(216, 216, 216);
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    padding: 6px 14px;
+    border-width: 1px;
+}
+.modal-buttons button:hover{
+    border: none;
+    background-color: rgb(154, 154, 154);
+}
+
+
+/* ---------------------------Delete Overlay------------------------- */
+
+.delete-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delete-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.delete-box h3,p{
+    padding: 2px;
+}
+.delete-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 22px;
+}
+.delete-buttons button{
+    background-color: rgb(216, 216, 216);
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    padding: 6px 14px;
+    border-width: 1px;
+}
+.delete-buttons button:hover{
+    border: none;
+    background-color: rgb(154, 154, 154);
+}
+
+/* ---------------------------------Remove Overlay---------------------------------- */
+
+.remove-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.remove-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.remove-box h3,p{
+    padding: 2px;
+}
+.remove-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 22px;
+}
+.remove-buttons button{
+    background-color: rgb(216, 216, 216);
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    padding: 6px 14px;
+    border-width: 1px;
+}
+.remove-buttons button:hover{
+    border: none;
+    background-color: rgb(154, 154, 154);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

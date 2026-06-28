@@ -1,0 +1,8 @@
+> User Register
+> User Login
+> Add Task
+> View Tasks
+> Edit Task
+> Delete Task
+> Mark Task as Completed
+> Logout

@@ -1,0 +1,17 @@
+User Table
+id
+name
+email
+password
+
+
+Task Table
+taskId
+title
+description
+status
+duedate
+userId
+
+Relationship:
+one User ----> Many Tasks

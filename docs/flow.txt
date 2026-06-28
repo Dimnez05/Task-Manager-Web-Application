@@ -1,0 +1,13 @@
+Register
+    |
+Login
+    |
+Dashboard
+    |
+Add Task
+    |
+View Task
+    |
+Edit/Delete/Complete
+    |
+Logout
